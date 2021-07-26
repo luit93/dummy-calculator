@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url(https://allfont.net/allfont.css?fonts=digital-7);
+.container {
+  background: linear-gradient(purple, orange, purple);
+  width: 400px;
+  height: 450px;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 9%;
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  grid-template-columns: auto;
+  grid-template-areas:
+    "screen"
+    "buttons";
+}
+
+.screen {
+  justify-content: center;
+  text-align: center;
+  height: 4rem;
+  background: linear-gradient(black, black, brown, black, black);
+  border-radius: 9%;
+  color: rgb(118, 194, 5);
+  font-family: "Digital-7", arial;
+  font-size: 50px;
+  grid-area: screen;
+}
+.buttons {
+  grid-area: buttons;
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  grid-template-columns: auto;
+  gap: 2.5rem;
+  grid-template-areas:
+    "ac per div mul"
+    "sev eig nine pl"
+    "four five six mi"
+    "one two three plusminus"
+    "zer zer dec equal";
+}
+
+.buttons > div {
+  display: grid;
+  border-radius: 11%;
+  font-weight: bolder;
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(silver, grey, white, grey, silver);
+}
+.ac {
+  grid-area: ac;
+}
+.division {
+  grid-area: div;
+}
+
+.percentage {
+  grid-area: per;
+}
+.multiply {
+  grid-area: mul;
+}
+.plus {
+  grid-area: pl;
+}
+.minus {
+  grid-area: mi;
+}
+.plus-minus {
+  grid-area: plusminus;
+}
+.equal {
+  grid-area: equal;
+}
+
+.decimal {
+  grid-area: dec;
+}
+.zero {
+  grid-area: zer;
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: sev;
+}
+.eight {
+  grid-area: eig;
+}
+
+.nine {
+  grid-area: nine;
+}
